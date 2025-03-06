@@ -25,3 +25,25 @@ void Repository::init(){
   std::filesystem::create_directory(repo_path / "branches" / "master");
 
 }
+
+void Repository::help(){
+
+  return;
+
+}
+
+void Repository::run_command(const std::string& command){
+
+  if (command == "init"){
+
+    init();
+
+  }
+
+  if (command == "help"){
+
+    help();
+
+  }
+
+}
